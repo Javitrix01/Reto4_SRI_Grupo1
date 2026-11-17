@@ -28,7 +28,7 @@
 
 ---
 
-## 2. Diagrama Lógico (Mermaid)
+## 2. Diagrama Lógico 
 ```mermaid
 graph TD
     WAN((Red Exterior / WAN<br/>172.26.46.0/24))
