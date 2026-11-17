@@ -22,8 +22,6 @@ La infraestructura utiliza cuatro máquinas Ubuntu Server conectadas a la LAN pr
 
 El dominio utilizado para los servicios DNS es `grupo1reto4.eus`. En la configuración inicial de las máquinas virtuales también se establecen el nombre de host, la puerta de enlace, los servidores DNS y el dominio de búsqueda.
 
-> **Nota:** las direcciones anteriores describen la LAN del proyecto. pfSense también dispone de una interfaz WAN, cuya dirección aparece en las capturas y en la configuración de red.
-
 ## 3. Preparación de las máquinas virtuales en Proxmox
 
 ### 3.1. Configuración mediante Cloud-Init
@@ -474,7 +472,6 @@ El documento original recoge las siguientes direcciones de acceso:
 | Página web F1 | `https://172.16.0.10/` | `http://www.grupo1reto4.eus/` |
 | Monitorix | `http://172.26.46.51:8181/monitorix/` | `http://monitorix.grupo1reto4.eus:8181/monitorix` |
 
-> **Observación sobre los enlaces:** se han transcrito tal como aparecen en el informe original. En el caso de la web F1, el enlace por IP utiliza HTTPS y el enlace por nombre utiliza HTTP. Conviene comprobar si ambos protocolos están configurados y si se desea que los dos enlaces utilicen el mismo protocolo antes de entregar la versión definitiva.
 
 ## 12. Seguridad y buenas prácticas
 
