@@ -102,6 +102,8 @@ La sincronización horaria permite que todos los servidores mantengan una hora c
 
 En el proyecto se contempla la sincronización mediante NTP y el uso de la zona horaria correspondiente. La documentación original incluye este apartado, aunque no detalla en texto todos los parámetros ni el resultado de las comprobaciones.
 
+![Instalación servicio NTP](capturas/Captura_NTP.png)
+
 ## 6. Fase 1 – Firewall pfSense
 
 ### 6.1. Deshabilitar el DHCP de pfSense
