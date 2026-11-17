@@ -76,8 +76,3 @@ graph TD
 ```
 
 ---
-
-## 4. Estructura del Repositorio
-
-* `README.md`: Documentación principal, topología de red y direccionamiento IP.
-* `gestion.md`: Planificación, reparto de responsabilidades y estado de las tareas del grupo.
