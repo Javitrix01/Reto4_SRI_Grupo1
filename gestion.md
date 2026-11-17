@@ -51,10 +51,3 @@ Este documento organiza la distribución de roles, configuración de servidores 
 * [ ] Documentación final y actualización de `README.md` y `gestion.md`.
 
 ---
-
-## 3. Seguimiento y Registro de Cambios
-
-| Fecha | Responsable | Equipo Afectado | Descripción de la Tarea / Cambio Realizado | Estado |
-| :--- | :--- | :--- | :--- | :--- |
-| `2026-11-17` | Equipo | General | Creación de estructura inicial del repositorio (`README.md` y `gestion.md`). | Completado |
-| *AAAA-MM-DD* | *Nombre* | *pfSense / serverX* | *Detalle de configuración...* | *En progreso* |
