@@ -1,0 +1,43 @@
+$TTL 86400
+@ IN SOA server1.grupo1reto4.eus. admin.grupo1reto4.eus. (
+    2026111309
+    3600
+    1800
+    604800
+    86400
+)
+
+; Servidores DNS
+@ IN NS server1.grupo1reto4.eus.
+@ IN NS server2.grupo1reto4.eus.
+
+; Servidores del grupo
+server1 IN A 192.168.1.101
+server2 IN A 192.168.1.102
+server3 IN A 192.168.1.103
+server4 IN A 192.168.1.104
+
+; Firewall
+firewall IN A 192.168.1.1
+firewall-wan IN A 172.26.46.51
+
+; Ordenadores Windows
+pc-win1 IN A 172.26.44.5
+pc-win2 IN A 172.26.44.6
+pc-win3 IN A 172.26.44.7
+pc-win4 IN A 172.26.44.8
+pc-win5 IN A 172.26.44.17
+
+; Servidor web
+www      IN A 172.16.0.10
+apache   IN A 172.26.46.51
+monitorix  IN A 172.26.46.51
+
+; Alias de las dos webs
+web       IN CNAME apache
+moni IN CNAME monitorix
+
+; Alias CNAME
+monitor IN CNAME server3.grupo1reto4.eus.
+dns1    IN CNAME server1.grupo1reto4.eus.
+dns2    IN CNAME server2.grupo1reto4.eus.
