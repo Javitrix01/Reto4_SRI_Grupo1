@@ -4,5 +4,3 @@ Este directorio contiene el informe técnico desarrollado en Markdown y las capt
 
 - `informe-tecnico.md`: explicación de la topología, preparación en Proxmox, pfSense, SSH, NTP, DHCP redundante, DNS maestro-esclavo, Apache2, Monitorix, accesos y conclusiones.
 - `capturas/`: imágenes utilizadas como evidencias en el informe.
-
-Mantén `informe-tecnico.md` y `capturas/` en el mismo directorio para que las imágenes se visualicen correctamente en GitHub.
