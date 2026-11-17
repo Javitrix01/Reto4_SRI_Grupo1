@@ -1,1 +1,21 @@
+# Claves privadas SSH
+*.pem
+id_rsa
+id_ed25519
+*.key
 
+# Contraseñas y secretos
+.env
+.env.*
+secrets/
+credentials/
+
+# Copias de seguridad
+*.bak
+*.old
+*.backup
+
+# Archivos temporales
+*.swp
+*~
+.DS_Store
