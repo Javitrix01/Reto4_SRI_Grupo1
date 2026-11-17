@@ -14,7 +14,7 @@ La infraestructura utiliza cuatro máquinas Ubuntu Server conectadas a la LAN pr
 
 | Equipo | Dirección IP | Función principal |
 |---|---:|---|
-| pfSense LAN | `192.168.1.1` | Puerta de enlace y firewall de la LAN |
+| pfSense WAN | `172.26.46.51` | Puerta de enlace y firewall de la WAN |
 | Server1 | `192.168.1.101` | DHCP primario y DNS maestro |
 | Server2 | `192.168.1.102` | DHCP secundario y DNS esclavo |
 | Server3 | `192.168.1.103` | Servidor web Apache2 y Monitorix |
