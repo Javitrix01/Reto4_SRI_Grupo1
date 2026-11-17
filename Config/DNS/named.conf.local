@@ -1,0 +1,42 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "grupo1reto4.eus" {
+    type master;
+    file "/etc/bind/db.grupo1reto4";
+    allow-transfer { 192.168.1.102; };
+    also-notify { 192.168.1.102; };
+};
+
+zone "1.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.192.168.1";
+    allow-transfer { 192.168.1.102; };
+    also-notify { 192.168.1.102; };
+};
+
+zone "44.26.172.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.172.26.44";
+    allow-transfer { 192.168.1.102; };
+    also-notify { 192.168.1.102; };
+};
+
+zone "46.26.172.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.172.26.46";
+    allow-transfer { 192.168.1.102; };
+    also-notify { 192.168.1.102; };
+};
+
+zone "0.16.172.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.172.16.0";
+    allow-transfer { 192.168.1.102; };
+    also-notify { 192.168.1.102; };
+};

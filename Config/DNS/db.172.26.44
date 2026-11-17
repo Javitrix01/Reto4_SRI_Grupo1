@@ -1,0 +1,17 @@
+$TTL 86400
+@ IN SOA server1.grupo1reto4.eus. admin.grupo1reto4.eus. (
+    2026111301
+    3600
+    1800
+    604800
+    86400
+)
+
+@ IN NS server1.grupo1reto4.eus.
+@ IN NS server2.grupo1reto4.eus.
+
+5 IN PTR pc-win1.grupo1reto4.eus.
+6 IN PTR pc-win2.grupo1reto4.eus.
+7 IN PTR pc-win3.grupo1reto4.eus.
+8 IN PTR pc-win4.grupo1reto4.eus.
+17 IN PTR pc-win5.grupo1reto4.eus.
