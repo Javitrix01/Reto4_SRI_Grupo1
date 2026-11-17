@@ -100,7 +100,51 @@ Una vez distribuidas las claves y preparado el archivo de configuración, se com
 
 La sincronización horaria permite que todos los servidores mantengan una hora coherente. Es importante para comparar registros, analizar incidencias y ordenar cronológicamente los eventos de los distintos equipos.
 
-En el proyecto se contempla la sincronización mediante NTP y el uso de la zona horaria correspondiente. La documentación original incluye este apartado, aunque no detalla en texto todos los parámetros ni el resultado de las comprobaciones.
+## Servicio NTP – Sincronización horaria
+
+Se instaló y configuró el servicio **NTP mediante Chrony** para mantener sincronizada la hora de los servidores Ubuntu. Esto permite que todos los equipos trabajen con la misma referencia horaria y que los registros de los servicios tengan marcas de tiempo coherentes.
+
+### Instalación de Chrony
+
+En primer lugar, se actualizaron los repositorios y se instaló el servicio:
+
+```bash
+sudo apt update
+sudo apt install chrony -y
+```
+
+### Configuración del servidor horario
+
+Se editó el archivo de configuración `/etc/chrony/chrony.conf` y se añadió el servidor horario de referencia:
+
+```bash
+server hora.roa.es iburst prefer
+```
+
+También se configuró la zona horaria de España:
+
+```bash
+sudo timedatectl set-timezone Europe/Madrid
+```
+
+### Reinicio y comprobación del servicio
+
+Se reinició Chrony para aplicar los cambios:
+
+```bash
+sudo systemctl restart chrony
+```
+
+Finalmente, se utilizaron los siguientes comandos para comprobar el estado del servicio y la sincronización:
+
+```bash
+systemctl status chrony
+chronyc sources -v
+chronyc tracking
+timedatectl status
+```
+
+Con estas comprobaciones se puede verificar que Chrony está funcionando, consultar las fuentes horarias configuradas y comprobar el estado de sincronización del sistema.
 
 ![Instalación servicio NTP](capturas/Captura_NTP.png)
 
