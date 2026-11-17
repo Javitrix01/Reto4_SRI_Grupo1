@@ -29,9 +29,6 @@
 ---
 
 ## 2. Diagrama Lógico (Mermaid)
-
-> *Compatible con GitHub, GitLab, Notion, Obsidian y editores Markdown modernos.*
-
 ```mermaid
 graph TD
     WAN((Red Exterior / WAN<br/>172.26.46.0/24))
