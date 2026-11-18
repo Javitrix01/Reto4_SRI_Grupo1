@@ -65,8 +65,8 @@ graph TD
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Proxmox** | Hipervisor | — | `172.26.46.240` | `8006/TCP` (Web GUI)<br>`22/TCP` (SSH) | Solo arrancar/parar VMs |
 | **pfSense** | Router / Firewall | `192.168.1.1` | `172.26.46.51` | `80, 443/TCP` (WebGUI)<br>`22/TCP` (SSH) | Puerta de enlace (Gateway) LAN |
-| **server1-g1** | DNS Maestro + DHCP Primario | `192.168.1.101` | — | `53/TCP, UDP` (DNS / AXFR)<br>`67, 68/UDP` (DHCP)<br>`647/TCP` (DHCP Failover)<br>`22/TCP` (SSH) | Estática |
-| **server2-g1** | DNS Esclavo + DHCP Secundario | `192.168.1.102` | — | `53/TCP, UDP` (DNS / AXFR)<br>`67, 68/UDP` (DHCP)<br>`647/TCP` (DHCP Failover)<br>`22/TCP` (SSH) | Estática |
+| **server1-g1** | DNS Maestro + DHCP Primario | `192.168.1.101` | — | `53/TCP, UDP` (DNS / AXFR)<br>`67, 68/UDP` (DHCP)<br>`22/TCP` (SSH) | Estática |
+| **server2-g1** | DNS Esclavo + DHCP Secundario | `192.168.1.102` | — | `53/TCP, UDP` (DNS / AXFR)<br>`67, 68/UDP` (DHCP)<br>`22/TCP` (SSH) | Estática |
 | **server3-g1** | Web Apache2 + Monitorix | `192.168.1.103` | — | `80/TCP` (HTTP)<br>`443/TCP` (HTTPS)<br>`8080/TCP` (Monitorix Web)<br>`22/TCP` (SSH) | Estática |
 | **server4-g1** | Sistemas: Admin. y pruebas | `192.168.1.104` | — | `22/TCP` (SSH) | Asignada por Reserva DHCP |
 
