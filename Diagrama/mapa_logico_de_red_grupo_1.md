@@ -27,8 +27,7 @@
   DHCP Primario             DHCP Secundario           Monitorix                 Admin. y pruebas
   - DNS: 53 (TCP/UDP)       - DNS: 53 (TCP/UDP)       - HTTP/S: 80,443 (TCP)    - SSH: 22 (TCP)
   - DHCP: 67,68 (UDP)       - DHCP: 67,68 (UDP)       - Monitorix: 8080 (TCP)
-  - Failover: 647 (TCP)     - Failover: 647 (TCP)     - SSH: 22 (TCP)
-  - SSH: 22 (TCP)           - SSH: 22 (TCP)
+  - SSH: 22 (TCP)           - SSH: 22 (TCP)           - SSH: 22 (TCP)
 ```
 
 ---
