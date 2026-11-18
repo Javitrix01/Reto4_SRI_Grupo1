@@ -71,4 +71,3 @@ graph TD
 | **server3-g1** | Web Apache2 + Monitorix | `192.168.1.103` | — | `80/TCP` (HTTP)<br>`443/TCP` (HTTPS)<br>`8080/TCP` (Monitorix Web)<br>`22/TCP` (SSH) | Estática |
 | **server4-g1** | Sistemas: Admin. y pruebas | `192.168.1.104` | — | `22/TCP` (SSH) | Asignada por Reserva DHCP |
 
-> **Nota de arquitectura:** Aunque **Proxmox** se encuentra accesible en la red WAN para su administración y aloja virtualmente a todas las máquinas virtuales, a nivel lógico el tráfico de la red `192.168.1.0/24` se enruta exclusivamente a través de las interfaces de **pfSense**. El puerto `53/TCP` entre `server1-g1` y `server2-g1` es indispensable para las transferencias de zona (AXFR/IXFR) y el `647/TCP` para la sincronización del clúster DHCP.
