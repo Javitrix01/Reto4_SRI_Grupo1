@@ -43,8 +43,8 @@ graph TD
 
     LAN["<b>Red Interna / LAN</b><br/>192.168.1.0/24"]
 
-    S1["<b>server1-g1</b><br/>DNS Maestro + DHCP Primario<br/><code>192.168.1.101</code><br/>DNS: 53/TCP-UDP | DHCP: 67,68/UDP<br/>Failover: 647/TCP | SSH: 22/TCP"]
-    S2["<b>server2-g1</b><br/>DNS Esclavo + DHCP Secundario<br/><code>192.168.1.102</code><br/>DNS: 53/TCP-UDP | DHCP: 67,68/UDP<br/>Failover: 647/TCP | SSH: 22/TCP"]
+    S1["<b>server1-g1</b><br/>DNS Maestro + DHCP Primario<br/><code>192.168.1.101</code><br/>DNS: 53/TCP-UDP | DHCP: 67,68/UDP | SSH: 22/TCP"]
+    S2["<b>server2-g1</b><br/>DNS Esclavo + DHCP Secundario<br/><code>192.168.1.102</code><br/>DNS: 53/TCP-UDP | DHCP: 67,68/UDP | SSH: 22/TCP"]
     S3["<b>server3-g1</b><br/>Web Apache2 + Monitorix<br/><code>192.168.1.103</code><br/>Web: 80,443/TCP | Monitorix: 8080/TCP<br/>SSH: 22/TCP"]
     S4["<b>server4-g1</b><br/>Sistemas: Admin. y pruebas<br/><code>192.168.1.104</code> (Reserva DHCP)<br/>SSH: 22/TCP"]
 
