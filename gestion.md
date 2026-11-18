@@ -40,3 +40,10 @@ Este documento organiza la distribución de roles, configuración de servidores 
 * [ ] Documentación final y actualización de `README.md` y `gestion.md`.
 
 ---
+## 2. Reflexión sobre el Proyecto y el Trabajo en Equipo
+
+El despliegue de esta infraestructura de red ha supuesto un reto técnico enriquecedor que nos ha permitido llevar a la práctica conceptos clave de administración de sistemas y servicios en red. Trabajar sobre un entorno virtualizado en **Proxmox** y segmentado mediante **pfSense** nos ha ayudado a comprender la importancia de una correcta planificación previa del direccionamiento IP y de las reglas de perímetro antes de levantar los servicios internos.
+
+Uno de los aprendizajes más valiosos ha sido la implementación de alta disponibilidad y redundancia mediante la sincronización entre el servidor primario (`server1-g1`) y el secundario (`server2-g1`). Configurar el intercambio de zonas DNS (AXFR) y el respaldo DHCP nos demostró cómo garantizar la continuidad del servicio ante posibles caídas, validando todo el proceso mediante pruebas reales de tolerancia a fallos. Asimismo, la integración de **Apache2** y **Monitorix** en `server3-g1` aportó una visión completa del ciclo de vida de un servicio: desde su despliegue hasta su supervisión continua.
+
+A nivel organizativo, la división clara de responsabilidades entre los miembros del **Grupo 1** facilitó avanzar en paralelo sin generar conflictos en la red, mientras que la fase conjunta de validación desde el cliente (`server4-g1`) reforzó la comunicación y la resolución colaborativa de incidencias. En definitiva, esta práctica no solo ha consolidado nuestros conocimientos técnicos, sino también nuestra capacidad para documentar, coordinar y auditar una infraestructura funcional de principio a fin.
