@@ -58,7 +58,7 @@ También se preparan las redirecciones de puertos (*port forwarding*). Una redir
 
 ![Configuración de pfSense](capturas/captura_06.png)
 
-![Redirección de puertos de pfSense](capturas/captura_07.png)
+![Redirección de puertos de pfSense](capturas/captura_new.png)
 
 ## 5. Acceso remoto mediante SSH y sincronización horaria
 
