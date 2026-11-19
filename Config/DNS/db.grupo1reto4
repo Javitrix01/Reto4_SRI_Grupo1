@@ -1,6 +1,6 @@
 $TTL 86400
 @ IN SOA server1.grupo1reto4.eus. admin.grupo1reto4.eus. (
-    2026111309
+    2026111901
     3600
     1800
     604800
@@ -29,7 +29,7 @@ pc-win4 IN A 172.26.44.8
 pc-win5 IN A 172.26.44.17
 
 ; Servidor web
-www      IN A 172.16.0.10
+www      IN A 172.16.250.101
 apache   IN A 172.26.46.51
 monitorix  IN A 172.26.46.51
 
