@@ -515,7 +515,7 @@ El documento original recoge las siguientes direcciones de acceso:
 | Servicio | Acceso mediante IP | Acceso mediante nombre |
 |---|---|---|
 | Apache | `http://172.26.46.51:8180/` | `http://apache.grupo1reto4.eus:8180/` |
-| Página web F1 | `https://172.16.250.10/` | `http://www.grupo1reto4.eus/` |
+| Página web F1 | `https://172.16.250.101/` | `http://www.grupo1reto4.eus/` |
 | Monitorix | `http://172.26.46.51:8181/monitorix/` | `http://monitorix.grupo1reto4.eus:8181/monitorix` |
 
 
